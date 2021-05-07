@@ -1,17 +1,83 @@
 body {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* header et menu */
+
+.header_menu {
+    display: flex;
+    justify-content: space between;
+}
+
+.nav_menu_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_menu_choix {
+    display: inline-block;
+    padding: 30px 30px 0px 30px;
+}
+
+.inscription {
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.zone_search {
+    display: flex;
+    align-items: center;
+}
+
+.icon_map {
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#ville {
+    padding: 13px 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.button_search {
+    background-color: #0065fc;
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.filtre_bouton {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
 }
 
 
 /* partie pour les hébergements à Marseille */
 
-.hotel_populaire {
+.hotel_activities {
     display: flex;
     margin: 25px 0px 50px;
-    flex-direction: column;
 }
 
-#hebergements {
+#hotel {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 62%;
@@ -24,23 +90,23 @@ body {
     flex-wrap: wrap;
 }
 
-.hebergement_section {
-    width: 30%;
-    width: calc(33% - 10px);
-    background: white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 5px 5px 15px 5px;
-    margin: 0px 5px 20px 5px;
-    box-shadow: 0px 5px 16px #0000002e;
-}
-
 .hebergement_section h3 {
     margin: 3px 10px;
 }
 
 .hebergement_section p {
     margin: 5px 10px;
+}
+
+.hebergement_section {
+    width: 30%;
+    width: calc(33% - 10px);
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    box-shadow: 0px 5px 16px #0000002e;
 }
 
 .hebergement_section img {
@@ -54,9 +120,59 @@ body {
 
 /* partie pour les plus populaires à Marseille */
 
-.hebergements_populaires {
+#hebergements_populaires {
     background-color: #f2f2f2;
     border-radius: 15px;
+    width: 28%;
+}
+
+.populaire_chart {
+    display: flex;
+    align-items: center;
+}
+
+.populaires_section {
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.populaires_section img {
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+    width: 25%;
+    height: 120px;
+    object-fit: cover;
+    float: left;
+}
+
+
+/*
+.title_box_populaire,
+.text_box_populaire {
+    float: right;
+} */
+
+
+/* pied de page */
+
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.footer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titre_footer {
+    display: block;
+}
+
+.contenu_footer {
+    display: block;
 }
 
 
@@ -66,15 +182,23 @@ body {
     margin: 3px 10px;
 }
 
+
+/* couleur et position par défaut */
+
 .fa-star {
     color: #d9d9d9;
     cursor: pointer;
-    padding: 0.0625rem;
 }
+
+
+/* couleur de l'étoile */
 
 .fa-star.gold {
     color: #0065fc;
 }
+
+
+/* position du groupe étoiles */
 
 .rating {
     display: flex;
@@ -82,14 +206,23 @@ body {
     align-items: left;
 }
 
+
+/* position des étoiles */
+
 .stars {
     display: inline-flex;
     justify-content: left;
 }
 
+
+/* pour passer les étoiles en jaune au survol */
+
 .stars:hover .fa-star {
     color: #ffdc0f;
 }
+
+
+/* étoiles non sélectionnées */
 
 .stars .fa-star:hover~.fa-star {
     color: gray;
