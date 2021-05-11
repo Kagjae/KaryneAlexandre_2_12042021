@@ -1,10 +1,30 @@
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0;
 }
 
 strong {
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.fas {
+    color: #0065fc;
+}
+
+.title_sections {
+    font-size: 1.3em;
+    padding-left: 8px;
 }
 
 
@@ -12,7 +32,9 @@ strong {
 
 .header_menu {
     display: flex;
-    justify-content: space between;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .nav_menu_list {
@@ -21,31 +43,65 @@ strong {
 }
 
 .nav_menu_choix {
-    display: inline-block;
-    padding: 30px 30px 0px 30px;
+    padding: 0px 30px;
+    color: black;
 }
 
-.inscription {
-    padding-top: 30px;
-    padding-left: 15px;
+.nav_menu_choix:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+#inscription {
+    padding: 0px 30px;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+#inscription:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
+}
+
+
+/* partie pour la recherche */
+
+.text_search h2 {
+    margin-bottom: 5px;
+    margin-top: 35px;
+}
+
+.text_search p {
+    margin: 5px 0px 20px;
 }
 
 .zone_search {
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .icon_map {
-    background-color: #F2F2F2;
-    color: black;
-    border: none;
+    background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
+    padding: 13px 10px;
+    width: 20px;
+    text-align: center;
 }
 
 #ville {
-    padding: 13px 10px;
     font-weight: bold;
     color: black;
+}
+
+input {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
 }
 
 .button_search {
@@ -53,13 +109,54 @@ strong {
     color: white;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    padding: 12px 20px;
+    padding: 12px 15px;
     text-align: center;
     font-size: 1.1em;
     cursor: pointer;
 }
 
+.fa-map-marker-alt {
+    color: black;
+}
+
+
+/* partie pour les filtres */
+
+#titre_filtre {
+    margin-right: 20px;
+}
+
 .filtre_bouton {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 2em;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtre_bouton:hover {
+    background-color: #DEEBFF;
+}
+
+.filtre_border {
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+}
+
+.zone_filtre {
+    display: flex;
+    align-items: center;
+}
+
+.zone_filtre h2 {
+    font-size: 1.2em;
+}
+
+.filtres {
     display: flex;
     align-items: center;
 }
@@ -67,6 +164,17 @@ strong {
 .info {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+}
+
+.info p {
+    margin-left: 10px;
+}
+
+.info_border {
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: solid 1px #d9d9d9;
 }
 
 
@@ -117,6 +225,12 @@ strong {
     object-fit: cover;
 }
 
+.show_more {
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
 
 /* partie pour les plus populaires à Marseille */
 
@@ -124,55 +238,80 @@ strong {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 28%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .populaire_chart {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.fa-chart-line:before {
+    color: black;
 }
 
 .populaires_section {
-    background-color: white;
+    display: flex;
+    width: 100%;
     border-radius: 20px;
+    padding: 5px;
     box-sizing: border-box;
-    margin: 10px;
+    margin-bottom: 20px;
+    height: 140px;
+    box-shadow: 0px 5px 16px #0000002e;
+    background: white;
+}
+
+.contenu_box {
+    margin-left: 15px;
+}
+
+.contenu_box h3 {
+    margin: 3px 10px
+}
+
+.contenu_box p {
+    margin: 5px 10px;
 }
 
 .populaires_section img {
     background-color: white;
     border-radius: 15px 0px 0px 15px;
-    width: 25%;
-    height: 120px;
+    width: 45%;
     object-fit: cover;
-    float: left;
 }
-
-
-/*
-.title_box_populaire,
-.text_box_populaire {
-    float: right;
-} */
 
 
 /* pied de page */
 
-footer {
-    display: flex;
+.footer_reservia {
+    max-width: 100%;
     background-color: #f2f2f2;
 }
 
-.footer {
+.footer_contenu {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 80%;
+    padding: 30px;
 }
 
-.titre_footer {
-    display: block;
+.footer_contenu h3 {
+    font-weight: bolder;
 }
 
 .contenu_footer {
-    display: block;
+    line-height: 1.5em;
+    color: black;
+}
+
+.footer_contenu .bloc_footer {
+    display: flex;
+    flex-direction: column;
 }
 
 
