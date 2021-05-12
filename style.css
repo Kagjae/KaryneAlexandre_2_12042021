@@ -43,27 +43,27 @@ h2 {
 }
 
 .nav_menu_choix {
-    padding: 0px 30px;
+    padding: 20px;
     color: black;
 }
 
 .nav_menu_choix:hover {
-    color: #0065FC;
-    border-top: solid 2px #0065FC;
-    padding-top: 20px;
+    color: #0065fc;
+    border-top: solid 2px #0065fc;
+    padding-top: 18px;
     font-weight: bolder;
 }
 
 #inscription {
-    padding: 0px 30px;
+    padding: 20px;
     font-weight: bold;
-    color: #0065FC;
+    color: #0065fc;
 }
 
 #inscription:hover {
-    color: #0065FC;
-    border-top: solid 2px #0065FC;
-    padding-top: 20px;
+    color: #0065fc;
+    border-top: solid 2px #0065fc;
+    padding-top: 18px;
 }
 
 
@@ -133,19 +133,20 @@ input {
     margin-right: 2em;
     border: 2px solid #d9d9d9;
     border-radius: 2em;
+    border-left: none;
     font-weight: bold;
     cursor: pointer;
     padding-right: 10px;
 }
 
 .filtre_bouton:hover {
-    background-color: #DEEBFF;
+    background-color: #deebff;
 }
 
 .filtre_border {
     padding: 15px 15px;
-    border-radius: 30px;
-    background-color: #DEEBFF;
+    border-radius: 50%;
+    background-color: #deebff;
 }
 
 .zone_filtre {
@@ -271,7 +272,7 @@ input {
 }
 
 .contenu_box h3 {
-    margin: 3px 10px
+    margin: 3px 10px;
 }
 
 .contenu_box p {
@@ -288,6 +289,10 @@ input {
 
 /* partie pour les activités */
 
+#activities_section h3 {
+    margin-left: 10px;
+}
+
 .bloc_activities_1,
 .bloc_activities_2,
 .bloc_activities_3,
@@ -297,7 +302,7 @@ input {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 16px #0000002e;
-    width: 23%;
+    width: 85%;
 }
 
 .bloc_activities_1 img,
@@ -312,7 +317,7 @@ input {
 
 .bloc_activities_5 img,
 .bloc_activities_6 img {
-    height: 110px;
+    height: 150px;
 }
 
 #activities_section img {
@@ -324,6 +329,9 @@ input {
 .grid_activities {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    margin-bottom: 40px;
 }
 
 .bloc_activities_1 {
