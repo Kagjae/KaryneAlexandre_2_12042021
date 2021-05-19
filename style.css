@@ -424,3 +424,69 @@ input {
 .stars .fa-star:hover~.fa-star {
     color: gray;
 }
+
+
+/* partie responsive pour smartphone */
+
+@media (max-width: 440px) {
+    h2 {
+        font-size: 3em;
+    }
+    .loupe {
+        color: white;
+        background-color: #0065fc;
+        padding: 18px;
+        border-radius: 18px;
+    }
+    .button_search {
+        display: none;
+    }
+    .title_sections {
+        font-size: 3em;
+    }
+    .stars {
+        font-size: 2.5em;
+        margin: 10px 10px;
+    }
+    #hotel {
+        border-radius: 15px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+    .hebergement_section {
+        width: 95%;
+        margin: 10px 5px 20px 5px;
+    }
+    .hebergement_section img {
+        height: 300px;
+    }
+    #hebergements_populaires {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+    .title_box_populaire {
+        font-size: 2.6em;
+    }
+    .text_box_populaire {
+        font-size: 2.4em;
+    }
+    .populaires_section {
+        height: 300px;
+    }
+    .hotel_activities {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 25px 0px 50px;
+    }
+    .grid_activities {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .footer_contenu {
+        display: flex;
+        flex-direction: column;
+    }
+}
