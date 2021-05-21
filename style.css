@@ -22,6 +22,26 @@
             color: #0065fc;
         }
         
+        .lien_bloc:link {
+            color: black;
+        }
+        
+        .lien_bloc:visited {
+            color: black;
+        }
+        
+        .lien_pop:link {
+            color: black;
+        }
+        
+        .lien_pop:visited {
+            color: black;
+        }
+        
+        .lien_pop {
+            display: flex;
+        }
+        
         .title_sections {
             font-size: 1.3em;
             padding-left: 8px;
