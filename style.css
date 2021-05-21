@@ -95,6 +95,7 @@ h2 {
 #ville {
     font-weight: bold;
     color: black;
+    margin-inline-start: 10px
 }
 
 input {
@@ -102,6 +103,10 @@ input {
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
+}
+
+.loupe {
+    display: none;
 }
 
 .button_search {
@@ -137,6 +142,10 @@ input {
     font-weight: bold;
     cursor: pointer;
     padding-right: 10px;
+}
+
+.filtre_bouton p {
+    margin-inline-start: 10px
 }
 
 .filtre_bouton:hover {
@@ -428,21 +437,94 @@ input {
 
 /* partie responsive pour smartphone */
 
-@media (max-width: 440px) {
+@media only screen and (max-width: 768px) {
     h2 {
         font-size: 3em;
     }
-    .loupe {
+    .fa-search:before {
         color: white;
+    }
+    .bloc_body {
+        margin: 20px;
+    }
+    .logo_reservia {
+        width: 50%;
+    }
+    .nav_menu_choix:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+        padding-bottom: 5px;
+    }
+    #inscription:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+        padding-bottom: 5px;
+    }
+    .header_menu {
+        display: grid;
+    }
+    .nav_menu_choix {
+        font-size: 3em;
+    }
+    .nav_menu_list {
+        display: flex;
+        justify-content: space-around;
+    }
+    #inscription {
+        font-size: 3em;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .icon_map {
+        border-radius: 30px 0px 0px 30px;
+        padding: 13px 40px;
+    }
+    .loupe {
         background-color: #0065fc;
         padding: 18px;
+        border: none;
+        display: inline;
         border-radius: 18px;
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 1.1em;
+        cursor: pointer;
     }
     .button_search {
         display: none;
     }
-    .title_sections {
+    .text_search h2 {
+        padding: 0px 20px;
+    }
+    .text_search p {
+        padding: 20px;
+    }
+    .zone_search {
         font-size: 3em;
+    }
+    #ville {
+        font-size: 0.9em;
+    }
+    .info {
+        font-size: 2em;
+        margin: 20px;
+    }
+    .zone_filtre {
+        display: grid;
+    }
+    .filtres {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 40%;
+        font-size: 1.5em;
+    }
+    .filtre_bouton {
+        width: 60%;
+    }
+    .title_sections {
+        font-size: 3.5em;
     }
     .stars {
         font-size: 2.5em;
@@ -461,6 +543,9 @@ input {
     .hebergement_section img {
         height: 300px;
     }
+    .fa-chart-line:before {
+        font-size: 3em;
+    }
     #hebergements_populaires {
         width: 95%;
         display: flex;
@@ -473,20 +558,50 @@ input {
     .text_box_populaire {
         font-size: 2.4em;
     }
+    .contenu_box {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .populaires_section {
-        height: 300px;
+        height: 400px;
     }
     .hotel_activities {
         display: flex;
         flex-direction: column-reverse;
         margin: 25px 0px 50px;
     }
+    .bloc_activities_3 {
+        grid-area: unset;
+    }
     .grid_activities {
         display: grid;
         grid-template-columns: auto;
+        padding-left: 20px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .bloc_activities_1 img,
+    .bloc_activities_2 img,
+    .bloc_activities_3 img,
+    .bloc_activities_4 img,
+    .bloc_activities_5 img,
+    .bloc_activities_6 img {
+        height: 400px;
+    }
+    .bloc_activities_1,
+    .bloc_activities_2,
+    .bloc_activities_3,
+    .bloc_activities_4,
+    .bloc_activities_5,
+    .bloc_activities_6 {
+        width: 95%;
     }
     .footer_contenu {
         display: flex;
         flex-direction: column;
+        font-size: 2.8em;
     }
 }
