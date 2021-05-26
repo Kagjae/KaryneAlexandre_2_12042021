@@ -121,6 +121,7 @@ h2 {
 #ville {
     font-weight: bold;
     color: black;
+    padding-left: 1em;
 }
 
 input {
