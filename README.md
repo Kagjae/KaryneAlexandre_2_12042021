@@ -22,4 +22,4 @@ D'autres contraintes :
 - Séparer le HTML et le CSS, et organiser le dossier de rendu.
 - Versionner le code avec Git, GitKraken conseillé.
 
-Le site est accessible à cette page : https://kagjae.github.io/P2/
+Le site est accessible à cette page : https://kagjae.github.io/KaryneAlexandre_2_12042021/
