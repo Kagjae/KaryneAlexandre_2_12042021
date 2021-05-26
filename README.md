@@ -21,3 +21,5 @@ D'autres contraintes :
 - Compatible avec les dernières versions de Chrome et Firefox.
 - Séparer le HTML et le CSS, et organiser le dossier de rendu.
 - Versionner le code avec Git, GitKraken conseillé.
+
+Le site est accessible à cette page : https://kagjae.github.io/KaryneAlexandre_2_12042021/
