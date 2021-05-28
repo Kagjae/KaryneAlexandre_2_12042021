@@ -508,7 +508,7 @@ input {
         font-size: 2em;
         position: absolute;
         top: 21px;
-        left: 105%
+        left: 80%
     }
     .header_menu {
         display: grid;
@@ -680,5 +680,14 @@ input {
     .contenu_box {
         margin-left: 0;
         font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    #inscription {
+        font-size: 2em;
+        position: absolute;
+        top: 21px;
+        left: 105%
     }
 }
