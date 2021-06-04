@@ -628,6 +628,9 @@ input {
         flex-direction: column;
         border-radius: 0px;
     }
+    .populaires_section img {
+        width: 230px;
+    }
     .title_box_populaire {
         font-size: 2.6em;
     }
@@ -635,7 +638,6 @@ input {
         font-size: 2.4em;
     }
     .contenu_box {
-        margin-top: 30px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
