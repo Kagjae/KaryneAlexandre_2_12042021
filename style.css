@@ -485,7 +485,7 @@ input {
         color: white;
     }
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .bloc_body {
         margin: 20px;
