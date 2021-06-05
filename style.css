@@ -484,6 +484,9 @@ input {
     .fa-search:before {
         color: white;
     }
+    body {
+        overflow: hidden;
+    }
     .bloc_body {
         margin: 20px;
     }
@@ -495,6 +498,9 @@ input {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 1;
+    }
+    .header_menu {
+        position: relative;
     }
     .nav_menu {
         grid-column-start: 1;
@@ -698,7 +704,7 @@ input {
     #inscription {
         font-size: 2em;
         position: absolute;
-        top: 21px;
-        left: 105%
+        top: 0;
+        left: 100%;
     }
 }
