@@ -708,3 +708,66 @@ input {
         left: 95%;
     }
 }
+
+@media only screen and (max-width: 380px) {
+    .logo_reservia {
+        width: auto;
+    }
+    .nav_menu_choix {
+        font-size: 1em;
+    }
+    #inscription {
+        font-size: 1em;
+        position: absolute;
+        top: 0;
+        left: 65%
+    }
+    .text_search h2 {
+        padding: 0;
+        font-size: 1.5em;
+    }
+    .text_search p {
+        padding: 15px 0px;
+        font-size: 1.5em;
+    }
+    .zone_search {
+        font-size: 1em;
+    }
+    .zone_filtre h2 {
+        font-size: 1.5em;
+    }
+    .filtres {
+        font-size: 1em;
+    }
+    .info {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .populaires_section {
+        height: 200px;
+    }
+    .populaires_section img {
+        width: 150px;
+    }
+    .contenu_box {
+        margin-left: 0;
+        font-size: 0.4em;
+    }
+    .title_sections {
+        font-size: 1.5em;
+    }
+    .hebergement_section {
+        width: 90%;
+    }
+    .hebergement_section img {
+        height: 150px;
+    }
+    .hebergement_section h3 {
+        font-size: 1.5em;
+    }
+    .hebergement_section p {
+        font-size: 1.5em;
+    }
+}
