@@ -770,4 +770,21 @@ input {
     .hebergement_section p {
         font-size: 1.5em;
     }
+    .show_more {
+        font-size: 1.2em;
+    }
+    .bloc_activities_1 img,
+    .bloc_activities_2 img,
+    .bloc_activities_3 img,
+    .bloc_activities_4 img,
+    .bloc_activities_5 img,
+    .bloc_activities_6 img {
+        height: 150px;
+    }
+    #activities_section h3 {
+        font-size: 1.5em;
+    }
+    .footer_contenu {
+        font-size: 1.5em;
+    }
 }
